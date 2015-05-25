@@ -1,0 +1,22 @@
+{
+  "author": "iwangx",
+  "name": "IM",
+  "version": "0.0.1",
+  "main": "app.js",
+  "description": "简单的webskote实例",
+  "devDependencies": {},
+  "engines": {
+    "node": "0.10.13",
+    "npm": "1.3.2"
+  },
+  "dependencies": {
+    "express": "*",
+    "routes": "*",
+    "ejs": "*",
+    "xmldom": "*",
+    "body-parser": "*",
+    "path": "*",
+    "fs": "*",
+    "xml2js":"*"
+  }
+}

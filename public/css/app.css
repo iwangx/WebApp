@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/*手机端尺寸自适应尺寸文件，以640宽度，40px作为最小大小,1px=1/40rem*/
+body {
+  background: #fbfbfb; }
+
+.sprite {
+  background: url(../images/sprite.png) no-repeat;
+  background-size: 3.45rem 4.075rem; }
+
+.header {
+  position: fixed;
+  background: #dd3131;
+  height: 2.25rem;
+  line-height: 2.25rem;
+  width: 100%;
+  left: 0;
+  top: 0;
+  font-size: 1rem;
+  color: #fff;
+  text-align: center; }
+  .header button {
+    position: absolute;
+    top: 0.4rem;
+    border: 0.05rem solid #fff;
+    border-radius: 50%;
+    box-sizing: content-box; }
+
+.btn-left {
+  height: 1.475rem;
+  width: 1.475rem;
+  background-position: 0 0;
+  left: 0.4rem; }
+
+.btn-right {
+  height: 1.475rem;
+  width: 1.475rem;
+  background-position: -1.875rem -0.125rem;
+  right: 0.4rem; }
+
+.nav {
+  display: -webkit-box;
+  position: fixed;
+  left: 0;
+  top: 2.25rem;
+  color: #3d3d3d;
+  font-size: 0.75rem;
+  width: 100%;
+  border-bottom: 0.025rem solid #e7e5e6; }
+  .nav a {
+    display: block;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    background: #fff;
+    -webkit-box-flex: 1;
+    border-right: 0.025rem solid #e7e5e6;
+    box-sizing: border-box; }
+
+.controller {
+  padding: 3.775rem 0 2.5rem 0; }
+
+.list li {
+  border-bottom: 0.025rem solid #cfcfcf; }
+.list a {
+  display: -webkit-box;
+  padding: 0.4rem; }
+.list img {
+  height: 3.05rem;
+  width: 3.05rem;
+  display: block; }
+
+.list-right {
+  -webkit-box-flex: 1;
+  padding-left: 0.375rem; }
+  .list-right h1 {
+    color: #555;
+    font-size: 0.6rem; }
+  .list-right p {
+    color: #878787;
+    font-size: 0.45rem;
+    margin-top: 0.375rem;
+    line-height: 1.5; }
+
+.footer {
+  height: 2.5rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  background: #4a4a4a;
+  text-align: center; }
+  .footer a {
+    display: block;
+    -webkit-box-flex: 1;
+    box-sizing: border-box;
+    padding-top: 0.25rem;
+    border-right: 0.025rem solid #fff; }
+    .footer a:last-child {
+      border-right: none; }
+  .footer i {
+    display: block;
+    margin: 0 auto; }
+  .footer span {
+    color: #fff;
+    font-size: 0.6rem;
+    display: block;
+    margin-top: 0.125rem; }
+
+.icon_book {
+  height: 1.1rem;
+  width: 1.625rem;
+  background-position: -1.825rem -1.775rem; }
+
+.icon_tag {
+  height: 1.1rem;
+  width: 1.625rem;
+  background-position: -0.025rem -2.975rem; }
+
+.icon_person {
+  height: 1.1rem;
+  width: 1.625rem;
+  background-position: 0 -1.65rem; }
+
+.icon_more {
+  height: 1.1rem;
+  width: 1.625rem;
+  background-position: -1.825rem -2.975rem; }
+
+/*# sourceMappingURL=app.css.map */

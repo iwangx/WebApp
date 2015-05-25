@@ -1,0 +1,41 @@
+@import "size";
+//所有图片变量
+@mixin sprite{background:url(../images/sprite.png) no-repeat ;background-size:$_138 $_163;}
+@mixin icon_right{height:$_59;width:$_59;background-position:0 -$_75 0 -$_5;}
+@mixin icon_left{height:$_59;width:$_59;background-position:0 0;}
+@mixin icon_tag{height:$_44;width:$_65;background-position:0 -$_1 0 -$_119;}
+@mixin icon_person{height:$_44;width:$_65;background-position:0 0 -$_66;}
+@mixin icon_book{height:$_44;width:$_65;background-position:0 -$_73 0 -$_71;}
+@mixin icon_more{height:$_44;width:$_65;background-position:0 -$_73 0 -$_119;}
+
+body{background: #fbfbfb}
+.sprite{@include sprite;}
+.header{position: fixed;background: #dd3131;height: $_90;line-height: $_90;;width: 100%;left: 0;top: 0;font-size: $_40;color: #fff;text-align: center;
+  button{position: absolute;top: $_16;border: $_2 solid #fff;border-radius: 50%;box-sizing: content-box}
+}
+.btn-left{@include icon_left;left: $_16;}
+.btn-right{@include icon_right;right: $_16;}
+.nav{display: -webkit-box;position: fixed;left: 0;top: $_90;color: #3d3d3d;font-size: $_30;width: 100%;border-bottom: $_1 solid #e7e5e6;
+  a{display: block;height: $_60;line-height: $_60;text-align: center;background: #fff;-webkit-box-flex: 1;border-right: $_1 solid #e7e5e6;box-sizing: border-box;}
+}
+.controller{padding: $_151 0 $_100 0;}
+.list{
+  li{border-bottom:$_1 solid #cfcfcf }
+  a{display: -webkit-box;padding: $_16;}
+  img{height: $_122;width: $_122;display: block}
+}
+.list-right{-webkit-box-flex: 1;padding-left: $_15;
+  h1{color: #555;font-size: $_24;}
+  p{color: #878787;font-size: $_18;margin-top: $_15;line-height: 1.5}
+}
+.footer{height: $_100;position: fixed;left: 0;bottom: 0;width: 100%;display: -webkit-box;background: #4a4a4a;text-align: center;
+  a{display: block;-webkit-box-flex: 1;box-sizing: border-box;padding-top: $_10;border-right: $_1 solid #fff;
+    &:last-child{border-right: none}
+  }
+  i{display: block;margin: 0 auto}
+  span{color: #fff;font-size: $_24;display: block;margin-top: $_5;}
+}
+.icon_book{@include icon_book}
+.icon_tag{@include icon_tag}
+.icon_person{@include icon_person}
+.icon_more{@include icon_more}
