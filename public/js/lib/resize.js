@@ -9,19 +9,16 @@
     }
     var v, initial_scale, timeCode, dom = win.document, domEle = dom.documentElement, viewport = dom.querySelector('meta[name="viewport"]'), flexible = dom.querySelector('meta[name="flexible"]');
     if (viewport) {
-        //viewport：<meta name="viewport"content="initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5,user-scalable=no,minimal-ui"/>
         var o = viewport.getAttribute("content").match(/initial\-scale=(["']?)([\d\.]+)\1?/);
         if(o){
             initial_scale = parseFloat(o[2]);
             v = parseInt(1 / initial_scale);
         }
-    } else {
-        if (flexible) {
-            var o = flexible.getAttribute("content").match(/initial\-dpr=(["']?)([\d\.]+)\1?/);
-            if(o){
-                v = parseFloat(o[2]);
-                initial_scale = parseFloat((1 / v).toFixed(2))
-            }
+    } else if(flexible) {
+        var o = flexible.getAttribute("content").match(/initial\-dpr=(["']?)([\d\.]+)\1?/);
+        if (o) {
+            v = parseFloat(o[2]);
+            initial_scale = parseFloat((1 / v).toFixed(2))
         }
     }
     if (!v && !initial_scale) {
