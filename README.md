@@ -1,2 +1,2 @@
-# webSocket
-简单的webSocket实践
+# WebApp
+简单的webapp自适应示例
