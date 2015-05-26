@@ -3,7 +3,7 @@
   "name": "IM",
   "version": "0.0.1",
   "main": "app.js",
-  "description": "简单的webskote实例",
+  "description": "",
   "devDependencies": {},
   "engines": {
     "node": "0.10.13",
@@ -12,11 +12,6 @@
   "dependencies": {
     "express": "*",
     "routes": "*",
-    "ejs": "*",
-    "xmldom": "*",
-    "body-parser": "*",
-    "path": "*",
-    "fs": "*",
-    "xml2js":"*"
+    "ejs": "*"
   }
 }
